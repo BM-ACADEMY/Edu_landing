@@ -38,7 +38,8 @@ export default function PopularProgramsSection() {
     ];
 
     return (
-        <section className='relative py-32 bg-white font-["Plus_Jakarta_Sans"] overflow-hidden'>
+
+        <section id="programs"  className='relative py-32 bg-white font-["Plus_Jakarta_Sans"] overflow-hidden'>
             {/* Background Accent */}
             <div className="absolute top-0 left-0 w-96 h-96 bg-[#00E0FF]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
 

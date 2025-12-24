@@ -52,7 +52,10 @@ export default function ServicesSection() {
     ];
 
     return (
-        <section className='relative py-32 bg-white font-["Plus_Jakarta_Sans"] overflow-hidden'>
+<section
+  id="about"
+  className='relative py-32 bg-white font-["Plus_Jakarta_Sans"] overflow-hidden'
+>
             <div className="container mx-auto px-6 md:px-16 lg:px-24">
 
                 {/* PRE-HEADER */}
