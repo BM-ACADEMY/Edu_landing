@@ -14,6 +14,7 @@ export default function Navbar() {
     { name: 'Programs', scrollId: 'programs' },
     { name: 'Webinars', scrollId: 'webinars' },
     { name: 'About', scrollId: 'about' },
+    { name: 'Contact Us', scrollId: 'contact' },
   ];
 
   return (
@@ -60,22 +61,10 @@ export default function Navbar() {
             href={GOOGLE_FORM_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className='text-[13px] font-bold text-edu-navy hover:text-edu-red transition-colors'
+            className='rounded-full bg-edu-navy px-8 py-3 text-[13px] font-bold text-white shadow-xl shadow-edu-navy/20 transition-all hover:bg-edu-red hover:shadow-edu-red/20 hover:-translate-y-0.5 active:scale-95'
           >
             Apply Now
           </a>
-
-          {/* CONTACT SCROLL */}
-          <button
-            onClick={() => {
-              document.getElementById('contact')?.scrollIntoView({
-                behavior: 'smooth',
-              });
-            }}
-            className='rounded-full bg-edu-navy px-8 py-3 text-[13px] font-bold text-white shadow-xl shadow-edu-navy/20 transition-all hover:bg-edu-red hover:shadow-edu-red/20 hover:-translate-y-0.5 active:scale-95'
-          >
-            Contact Us
-          </button>
         </div>
 
         {/* MOBILE MENU BUTTON */}

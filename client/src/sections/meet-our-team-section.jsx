@@ -6,23 +6,24 @@ export default function UpcomingWebinarsSection() {
 
     const webinars = [
         {
-            topic: 'MBBS Abroad: Choosing the Right Country',
-            date: 'Sunday, 4 PM',
-            category: 'Medical',
+            topic: 'MBBS in Georgia: Eligibility, Fees & Admission Process',
+            date: 'Sunday | 4:00 PM IST',
+            category: 'MBBS ABROAD',
             // Updated to a reliable high-res medical image
             image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop',
         },
         {
-            topic: 'Study in France: Low Tuition & High Quality',
-            date: 'Saturday, 6 PM',
-            category: 'Europe Study',
+            topic: 'Study in France: Universities, Costs & Admission Process',
+            date: 'Saturday | 6:00 PM IST',
+            category: 'STUDY IN FRANCE',
             // Updated to a reliable high-res France image
             image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop',
         },
         {
-            topic: 'Local College Admissions: Strategy & Cut-offs',
-            date: 'Sunday, 11 AM',
-            category: 'Admissions',
+            topic: 'Local College Admissions: Counselling, Cut-Offs & Seats',
+            date: 'Sunday | 11:00 AM IST',
+            
+            category: 'LOCAL ADMISSIONS',
             // Updated to a reliable high-res graduation image
             image: 'https://images.unsplash.com/photo-1667273704848-32df02bd29f3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
@@ -48,7 +49,7 @@ export default function UpcomingWebinarsSection() {
                         </h2>
                     </div>
                     <p className="max-w-xs text-sm font-bold text-slate-400 uppercase tracking-widest leading-relaxed">
-                        Join our live sessions to get your doubts cleared by experts.
+                        Join expert-led sessions on MBBS abroad, France education, and local admissions.
                     </p>
                 </div>
 

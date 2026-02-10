@@ -11,12 +11,12 @@ export default function WhyChooseUsSection() {
     const data = [
         {
             title: 'Personalized Guidance',
-            description: 'One-on-one counseling tailored to your goals, budget, and academic background.',
+            description: 'One-on-one counselling tailored to your academic goals, budget, and career plans.',
             icon: UserCheckIcon,
         },
         {
-            title: 'Global Opportunities',
-            description: 'Specialized pathways for MBBS abroad and higher studies in France.',
+            title: 'International Study Options',
+            description: 'Guided pathways for study abroad in France and MBBS admissions in Georgia.',
             icon: GlobeIcon,
         },
         {
@@ -26,7 +26,7 @@ export default function WhyChooseUsSection() {
         },
         {
             title: 'Transparent Process',
-            description: 'No hidden costs. Clear fee structures and scholarship assistance for every student.',
+            description: 'No hidden costs, clear fee structures, and complete transparency at every stage.',
             icon: ShieldCheckIcon,
         },
         {
@@ -36,7 +36,7 @@ export default function WhyChooseUsSection() {
         },
         {
             title: 'Instant Support',
-            description: 'Get your queries resolved quickly with our 24/7 fast WhatsApp response team.',
+            description: 'Get your queries resolved quickly through our 24/7 WhatsApp support team.',
             icon: ZapIcon,
         },
     ];
@@ -45,22 +45,23 @@ export default function WhyChooseUsSection() {
         <section className='relative py-24 bg-white overflow-hidden font-["Plus_Jakarta_Sans"]'>
             <div className="container mx-auto px-6 md:px-16 lg:px-24">
 
-                {/* Header Section aligned to the left like the image */}
-                <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
-                    <div className="max-w-2xl">
-                        <div className='flex items-center gap-3 mb-6'>
-                            <span className="h-[3px] w-12 bg-[#CE2029]"></span>
-                            <span className='text-[11px] font-[900] uppercase tracking-[0.3em] text-[#CE2029]'>
-                                The Advantage
-                            </span>
-                        </div>
-                        <h2 className="text-5xl md:text-6xl font-[900] text-slate-900 tracking-tighter leading-[1.1]">
-                            Why Students <br />
-                            <span className="text-slate-400">Trust Us</span>
-                        </h2>
+                {/* Header Section: Stacked Layout */}
+                <div className="mb-20 max-w-3xl">
+                    <div className='flex items-center gap-3 mb-6'>
+                        <span className="h-[3px] w-12 bg-[#CE2029]"></span>
+                        <span className='text-[11px] font-[900] uppercase tracking-[0.3em] text-[#CE2029]'>
+                            THE EDU CONSULTANT ADVANTAGE
+                        </span>
                     </div>
-                    <p className="max-w-sm text-lg text-slate-500 font-medium leading-relaxed border-l-2 border-slate-100 pl-6">
-                        We simplify your study journey with expert guidance and complete transparency.
+
+                    <h2 className="text-5xl md:text-6xl font-[900] text-slate-900 tracking-tighter leading-[1.1] mb-8">
+                        Why Students <br />
+                        <span className="text-slate-400">Trust Us</span>
+                    </h2>
+
+                    {/* Supporting line moved below the heading with updated text */}
+                    <p className="text-lg text-slate-500 font-medium leading-relaxed border-l-[3px] border-slate-100 pl-6">
+                        We simplify international and local admissions through expert guidance, transparent processes, and dedicated support.
                     </p>
                 </div>
 
