@@ -129,27 +129,24 @@ export default function Footer() {
               allowFullScreen="" 
               loading="lazy"
               title="Edu Consultants Location"
-              // Removed 'grayscale' class here
               className="w-full h-full"
             />
           </div>
 
         </div>
 
-        {/* BOTTOM BAR */}
-        <div className="border-t border-slate-100 py-8 md:py-10 text-center flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-bold uppercase tracking-widest text-slate-400">
-          <p>© 2025 EDU Consultants. All Rights Reserved.</p>
-          <p>
-            Powered by{" "}
-            <a
-              href="https://bmtechx.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#001F3F] hover:text-[#CE2029] transition-colors"
-            >
-              BMTechx.in
-            </a>
-          </p>
+        {/* BOTTOM BAR - UPDATED TEXT */}
+        <div className="border-t border-slate-100 py-8 text-center text-xs font-bold uppercase tracking-widest text-slate-400">
+          © 2026{" "}
+          <a
+            href="https://bmtechx.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#001F3F] hover:text-[#CE2029] transition-colors"
+          >
+            BMTechx.in
+          </a>
+          . All Rights Reserved.
         </div>
 
       </div>
