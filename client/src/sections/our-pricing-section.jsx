@@ -7,7 +7,7 @@ export default function TrendingContentSection() {
   const trendingPosts = [
     {
       title: 'Top MBBS Colleges in Georgia: 2025 Rankings',
-      excerpt: 'Top medical universities in Georgia offering English-taught MBBS programs with global recognition.',
+      excerpt: 'Top medical universities in Georgia offering English-taught MBBS programs with global reach',
       category: 'MBBS Abroad',
       date: '2 Days Ago',
       image: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600',
@@ -23,7 +23,7 @@ export default function TrendingContentSection() {
     },
     {
       title: 'Medical Education: Local vs Abroad',
-      excerpt: ' Comparison of medical education in India and abroad, including costs, exposure, and licensing paths.',
+      excerpt: 'Comparison of medical education in India and abroad, including costs, exposure, and licensing paths.',
       category: 'Expert Guide',
       date: 'Trending',
       image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600',
