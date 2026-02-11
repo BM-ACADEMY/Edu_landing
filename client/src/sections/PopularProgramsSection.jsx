@@ -4,7 +4,7 @@ export default function PopularProgramsSection() {
     const programs = [
         {
             category: 'MBBS Abroad',
-            title: 'Medical Degree in Georgia & Kyrgyzstan',
+            title: 'Medical Degrees in Georgia & Kyrgyzstan',
             details: [
                 { icon: MapPinIcon, label: 'Destinations', value: 'Georgia, Kyrgyzstan, Uzbekistan' },
                 { icon: BanknoteIcon, label: 'Fee Range', value: '₹18L – ₹30L (Total Package)' },
@@ -15,7 +15,7 @@ export default function PopularProgramsSection() {
         },
         {
             category: 'France UG/PG',
-            title: 'Study in France (Public & Private)',
+            title: 'Study in France (Public & Private Universities)',
             details: [
                 { icon: MapPinIcon, label: 'Disciplines', value: 'Business, Engineering, Arts' },
                 { icon: BanknoteIcon, label: 'Scholarships', value: 'Eiffel & Charpak Available' },
@@ -46,7 +46,7 @@ export default function PopularProgramsSection() {
             <div className="container mx-auto px-6 md:px-16 lg:px-24">
 
                 {/* Header Section */}
-                <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
+                <div className="flex flex-col mb-20 gap-6">
                     <div className="max-w-2xl">
                         <div className='flex items-center gap-3 mb-6'>
                             <span className="h-[3px] w-12 bg-[#CE2029]"></span>
@@ -58,7 +58,7 @@ export default function PopularProgramsSection() {
                             Popular <span className="text-slate-400">Programs</span>
                         </h2>
                     </div>
-                    <p className="max-w-sm text-lg text-slate-500 font-medium leading-relaxed border-l-2 border-slate-100 pl-6">
+                    <p className="max-w-2xl text-lg text-slate-500 font-medium leading-relaxed border-l-2 border-slate-100 pl-6">
                         Explore our sought-after pathways with clear details on costs and intake timelines.
                     </p>
                 </div>

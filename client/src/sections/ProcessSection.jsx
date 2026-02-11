@@ -3,18 +3,18 @@ import { ClipboardEditIcon, MessageSquareIcon, FingerprintIcon, ArrowRightIcon }
 export default function ProcessSection() {
     const steps = [
         {
-            title: 'Register Profile',
-            description: 'Fill out our quick lead form with your preferences (MBBS, France, or Local).',
+            title: 'Register Your Profile',
+            description: 'Fill out our quick lead form with your study preferences (MBBS, France, or local options).',
             icon: ClipboardEditIcon,
         },
         {
             title: 'Expert Outreach',
-            description: 'Our counselors will contact you via WhatsApp within 24–48 hours for a discovery call.',
+            description: 'Our counselors will contact you via WhatsApp within 24–48 hours for a personalized discovery call.',
             icon: MessageSquareIcon,
         },
         {
             title: 'Tracking & Updates',
-            description: 'Receive your unique Application ID to track your admission status in real-time.',
+            description: 'Receive a unique Application ID to track your admission status in real time.',
             icon: FingerprintIcon,
         },
     ];
@@ -26,7 +26,8 @@ export default function ProcessSection() {
 
             <div className="container mx-auto px-6 md:px-16 lg:px-24">
                 {/* Header Section */}
-                <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-8">
+                {/* Header Section */}
+                <div className="flex flex-col mb-16 gap-6">
                     <div className="max-w-2xl">
                         <div className='flex items-center gap-3 mb-6'>
                             <span className="h-[3px] w-12 bg-[#CE2029]"></span>
@@ -39,8 +40,8 @@ export default function ProcessSection() {
                             <span className="text-slate-400">Process Works</span>
                         </h2>
                     </div>
-                    <p className="max-w-sm text-lg text-slate-500 font-medium leading-relaxed border-l-2 border-slate-100 pl-6">
-                        We’ve streamlined the journey from confusion to enrollment into three simple stages.
+                    <p className="max-w-2xl text-lg text-slate-500 font-medium leading-relaxed border-l-2 border-slate-100 pl-6">
+                        We’ve streamlined the journey from exploration to enrollment into three simple stages.
                     </p>
                 </div>
 
@@ -91,7 +92,7 @@ export default function ProcessSection() {
                     <div className='mt-6 flex items-center gap-2'>
                         <div className="h-1.5 w-1.5 rounded-full bg-[#00E0FF] animate-pulse" />
                         <p className='text-[10px] text-slate-400 font-black uppercase tracking-widest'>
-                            No consultation fees required
+                            100% Free Consultation
                         </p>
                     </div>
                 </div>

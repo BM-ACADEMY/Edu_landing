@@ -22,29 +22,29 @@ export default function ServicesSection() {
             details: '150+ Partner Universities'
         },
         {
-            title: 'Financial Architecture',
-            description: 'Customized budget roadmaps from ₹10L to ₹30L+. We provide full transparency on tuition, currency exchange, and hidden living costs.',
+            title: 'Financial Planning & Cost Transparency',
+            description: 'Customized budget planning from ₹10L to ₹30L+. Complete transparency on tuition fees, currency exchange, and living expenses — no hidden costs.',
             icon: WalletIcon,
             tag: 'Planning',
             details: 'No Hidden Charges'
         },
         {
-            title: 'Apostille & Compliance',
-            description: 'Complete handling of transcript verification, NEET score submission, and international apostille requirements for error-free applications.',
+            title: 'Apostille & Documentation Support',
+            description: 'End-to-end handling of transcripts, NEET documentation, and international apostille requirements to ensure error-free applications.',
             icon: ClipboardCheckIcon,
             tag: 'Legal',
             details: '100% Document Success'
         },
         {
-            title: 'Visa & Logistics Envoy',
-            description: 'Professional representation for student visa interviews and end-to-end travel coordination to ensure a seamless arrival at your campus.',
+            title: 'Visa & Travel Assistance',
+            description: 'Complete support for student visa interviews, approvals, and travel coordination — ensuring a smooth and stress-free arrival at your campus.',
             icon: PlaneIcon,
             tag: 'Schengen/Global',
             details: 'Priority Processing'
         },
         {
-            title: 'Executive Consulting',
-            description: 'Private 1-to-1 sessions with senior consultants to define your 5-year career roadmap and residency goals post-graduation.',
+            title: 'Personal Career Counselling',
+            description: 'One-on-one sessions with senior consultants to plan your medical or academic career, including post-study options and long-term goals.',
             icon: UserIcon,
             tag: 'Strategic',
             details: 'Expert Led'
@@ -90,7 +90,7 @@ export default function ServicesSection() {
             }`}>
                 0{index + 1}
             </span>
-            <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-all duration-500 ${
+            <h3 className={`text-[22px] font-bold tracking-tight transition-all duration-500 ${
                 activeIndex === index ? 'text-[#001F3F] translate-x-2' : 'text-slate-400'
             }`}>
                 {service.title}
@@ -140,11 +140,11 @@ export default function ServicesSection() {
                                         </span>
                                     </div>
 
-                                    <h4 className='text-3xl font-black leading-tight'>
+                                    <h4 className='text-[22px] font-black leading-tight'>
                                         {services[activeIndex].title}
                                     </h4>
 
-                                    <p className='text-white/70 text-lg font-medium leading-relaxed italic'>
+                                    <p className='text-white/70 text-[15px] font-medium leading-relaxed italic'>
                                         "{services[activeIndex].description}"
                                     </p>
 

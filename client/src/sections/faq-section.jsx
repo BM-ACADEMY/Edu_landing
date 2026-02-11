@@ -7,19 +7,19 @@ export default function FaqSection() {
     const data = [
         {
             question: 'Is NEET mandatory for MBBS abroad?',
-            answer: 'Yes. Per NMC guidelines, qualifying NEET is essential for Indian students intending to practice in India post-graduation.',
+            answer: 'Yes. As per NMC guidelines, qualifying NEET is mandatory for Indian students who plan to practice in India after completing their MBBS abroad.',
         },
         {
             question: 'How do you assist with the student visa process?',
-            answer: 'We offer full-spectrum support: document drafting, appointment strategy, and personalized mock interviews to ensure success.',
+            answer: 'We provide end-to-end visa support, including document preparation, appointment guidance, and personalized mock interviews for a smooth approval process.',
         },
         {
             question: 'Are there scholarships for France & MBBS?',
-            answer: 'We specialize in Eiffel and Charpak grants for France, and merit-based tuition waivers for specific medical universities.',
+            answer: 'Yes. We guide students through Eiffel and Charpak scholarships for France, along with merit-based tuition waivers offered by select medical universities.',
         },
         {
             question: 'Which program fits my budget?',
-            answer: 'Our 1-to-1 sessions align your academic profile with global options ranging from ₹10L to ₹30L+ packages.',
+            answer: 'Through personalized 1-to-1 counseling, we match your academic profile with global programs ranging from ₹10L to ₹30L+ based on your budget and goals.',
         }
     ];
 
@@ -77,7 +77,7 @@ export default function FaqSection() {
                                     </div>
 
                                     <div className={`overflow-hidden transition-all duration-700 ease-in-out ${openIndex === index ? 'max-h-40 opacity-100 mt-8' : 'max-h-0 opacity-0'}`}>
-                                        <p className='text-lg leading-relaxed text-slate-500 font-medium max-w-3xl italic'>
+                                        <p className='text-lg leading-loose text-slate-500 font-medium md:max-w-[65%] italic'>
                                             {item.answer}
                                         </p>
                                     </div>

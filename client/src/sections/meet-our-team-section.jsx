@@ -72,7 +72,7 @@ export default function UpcomingWebinarsSection() {
                             </div>
 
                             {/* Content Area */}
-                            <div className="flex flex-col p-8 bg-white">
+                            <div className="flex flex-col p-8 bg-white flex-1">
                                 <div className="mb-4 flex items-center gap-2 text-xs font-black text-[#CE2029] uppercase tracking-wider">
                                     <CalendarIcon className="size-4" />
                                     <span>{webinar.date}</span>
@@ -82,7 +82,7 @@ export default function UpcomingWebinarsSection() {
                                     {webinar.topic}
                                 </h3>
 
-                                <div className="mt-6 flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-tight">
+                                <div className="mt-auto flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-tight pt-6">
                                     <VideoIcon className="size-4 text-slate-300" />
                                     <span>Live via Zoom/Meet</span>
                                 </div>

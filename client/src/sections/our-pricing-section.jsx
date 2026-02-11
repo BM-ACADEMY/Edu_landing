@@ -7,7 +7,7 @@ export default function TrendingContentSection() {
   const trendingPosts = [
     {
       title: 'Top MBBS Colleges in Georgia: 2025 Rankings',
-      excerpt: 'Exploring the best medical universities in Georgia with English-taught programs and global recognition.',
+      excerpt: 'Top medical universities in Georgia offering English-taught MBBS programs with global recognition.',
       category: 'MBBS Abroad',
       date: '2 Days Ago',
       image: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600',
@@ -15,15 +15,15 @@ export default function TrendingContentSection() {
     },
     {
       title: 'Scholarships for France: How to Apply',
-      excerpt: 'A complete guide to Eiffel Excellence and other scholarships for international students in 2025.',
+      excerpt: 'Step-by-step guide to scholarships for MBBS and higher studies in France for international students.',
       category: 'Scholarships',
       date: '5 Days Ago',
       image: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600',
       link: '#'
     },
     {
-      title: 'Local vs Abroad: Medical Education Reality',
-      excerpt: 'Comparing the ROI, clinical exposure, and licensing requirements for India vs. foreign universities.',
+      title: 'Medical Education: Local vs Abroad',
+      excerpt: ' Comparison of medical education in India and abroad, including costs, exposure, and licensing paths.',
       category: 'Expert Guide',
       date: 'Trending',
       image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600',
