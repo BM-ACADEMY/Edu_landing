@@ -103,7 +103,8 @@ export default function TrendingContentSection() {
                   {post.title}
                 </h3>
 
-                <p className='mt-4 text-[15px] leading-relaxed text-slate-500 font-medium line-clamp-2'>
+                {/* REMOVED line-clamp-2 so full text shows */}
+                <p className='mt-4 text-[15px] leading-relaxed text-slate-500 font-medium'>
                   {post.excerpt}
                 </p>
 
