@@ -25,7 +25,6 @@ export default function UpcomingWebinarsSection() {
   ];
 
   return (
-    // Reduced vertical padding for mobile (py-16 vs py-24)
     <section id="webinars" className='relative py-16 md:py-24 bg-white font-["Plus_Jakarta_Sans"] overflow-hidden'>
       
       {/* Background Decoration */}
@@ -43,13 +42,13 @@ export default function UpcomingWebinarsSection() {
               </span>
             </div>
             
-            {/* Scaled heading for mobile */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-[900] text-slate-900 tracking-tighter leading-none">
               Upcoming <span className="text-slate-400">Webinars</span>
             </h2>
           </div>
           
-          <p className="max-w-xs text-sm font-bold text-slate-400 uppercase tracking-widest leading-relaxed">
+          {/* UPDATED: Removed 'uppercase', ensuring strict sentence case with Capital J */}
+          <p className="max-w-xs text-sm font-bold text-slate-400 tracking-widest leading-relaxed">
             Join expert-led sessions on MBBS abroad, France education, and local admissions.
           </p>
         </div>
@@ -72,14 +71,12 @@ export default function UpcomingWebinarsSection() {
               </div>
 
               {/* Content Area */}
-              {/* Reduced padding for mobile (p-6 vs p-8) */}
               <div className="flex flex-col p-6 md:p-8 bg-white flex-1">
                 <div className="mb-3 md:mb-4 flex items-center gap-2 text-xs font-black text-[#CE2029] uppercase tracking-wider">
                   <CalendarIcon className="size-4" />
                   <span>{webinar.date}</span>
                 </div>
 
-                {/* Scaled title for mobile */}
                 <h3 className='text-xl md:text-2xl font-extrabold leading-[1.2] text-[#001F3F] transition-colors group-hover:text-[#CE2029]'>
                   {webinar.topic}
                 </h3>
