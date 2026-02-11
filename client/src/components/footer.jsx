@@ -30,8 +30,7 @@ export default function Footer() {
               <img src="/assets/edu.png" alt="EDU Consultants" className="h-12" />
             </button>
             <p className="text-slate-500 text-sm leading-relaxed max-w-sm">
-              We guide students toward their dream education with expert counseling
-              and personalized university selection.
+              We guide students toward their dream education through expert counseling, transparent guidance, and personalized university selection.
             </p>
           </div>
 
@@ -47,8 +46,13 @@ export default function Footer() {
                 </button>
               </li>
               <li>
+                <button onClick={() => scrollTo("programs")} className="hover:text-[#CE2029]">
+                  Programs
+                </button>
+              </li>
+              <li>
                 <button onClick={() => scrollTo("webinars")} className="hover:text-[#CE2029]">
-                  Webinar
+                  Webinars
                 </button>
               </li>
               <li>
@@ -103,8 +107,8 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPinIcon className="size-5 text-[#CE2029]" />
                 <p>
-                  252, 2nd Floor, M G Road, Kottakuppam,<br />
-                  Vanur, Tamil Nadu 605104
+                  252, 2nd Floor, MG Road<br />
+                  Kottakuppam, Vanur – Tamil Nadu 605104
                 </p>
               </div>
 
@@ -125,7 +129,7 @@ export default function Footer() {
           </div>
 
           {/* MAP */}
-          <div className="w-full h-[220px] rounded-xl overflow-hidden border border-slate-200">
+          <div className="w-full h-[180px] rounded-3xl overflow-hidden border border-slate-200">
             <iframe
               title="BM Academy Location"
               src="https://www.google.com/maps?q=BM%20Academy%20Puducherry&output=embed"

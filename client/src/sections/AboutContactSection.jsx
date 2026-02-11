@@ -40,12 +40,11 @@ export default function AboutContactSection() {
               </h2>
 
               <p className='text-white/60 text-xl leading-relaxed font-medium max-w-2xl'>
-                At EduConsultants, we believe every student deserves clear, honest,
-                and professional guidance. We specialize in end-to-end support for{" "}
+                At EduConsultants, we believe every student deserves clear, honest, and professional guidance. We specialize in end-to-end support for{" "}
                 <span className="text-white font-bold underline decoration-[#CE2029] underline-offset-4">
                   MBBS Abroad
                 </span>
-                , European excellence, and premium local admissions.
+                , leading European universities, and premium local admissions.
               </p>
             </div>
 
@@ -57,8 +56,7 @@ export default function AboutContactSection() {
                   Student-First
                 </h4>
                 <p className='text-white/40 text-sm font-medium'>
-                  Every plan is meticulously tailored to your academic and
-                  financial parameters.
+                  Every plan is thoughtfully tailored to your academic goals and budget.
                 </p>
               </div>
 
@@ -68,23 +66,22 @@ export default function AboutContactSection() {
                   Direct Access
                 </h4>
                 <p className='text-white/40 text-sm font-medium'>
-                  No middlemen. Direct university communication protocols and
-                  transparent fee structures.
+                  No middlemen. Direct university communication and transparent fee structures.
                 </p>
               </div>
             </div>
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className='lg:col-span-5'>
-            <div className='bg-white rounded-[3rem] p-10 md:p-14 text-[#001F3F] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] relative overflow-hidden'>
+          <div className='lg:col-span-5 lg:mt-16'>
+            <div className='bg-white rounded-[3rem] p-10 md:p-12 text-[#001F3F] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] relative overflow-hidden'>
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#00E0FF]/10 rounded-full blur-3xl" />
 
-              <h3 className='text-3xl font-black tracking-tight mb-12'>
+              <h3 className='text-3xl font-black tracking-tight mb-10'>
                 Get in Touch
               </h3>
 
-              <div className='space-y-10 relative z-10'>
+              <div className='space-y-8 relative z-10'>
 
                 {/* WHATSAPP */}
                 <a
@@ -148,7 +145,7 @@ export default function AboutContactSection() {
                 href={GOOGLE_FORM_LINK}
                 target="_blank"
                 rel="noreferrer"
-                className='mt-14 flex items-center justify-between bg-[#CE2029] text-white p-6 rounded-2xl font-black text-sm tracking-widest transition-all hover:bg-[#001F3F] group'
+                className='mt-12 flex items-center justify-between bg-[#CE2029] text-white p-6 rounded-2xl font-black text-sm tracking-widest transition-all hover:bg-[#001F3F] group'
               >
                 START APPLICATION
                 <ArrowRightIcon className='size-5 transition-transform group-hover:translate-x-2' />
