@@ -41,7 +41,7 @@ export default function HeroSection() {
 
             <p className='max-w-xl text-base md:text-lg lg:text-xl text-slate-500 font-light leading-relaxed'>
               We Provide One-On-One Counselling, Fast Processes, and End-To-End Admission
-              Support for Study Abroad in France and MBBS in Georgia. <span className='text-edu-navy font-semibold underline decoration-edu-red/30'>trusted expertise.</span>
+              Support for Study Abroad in France and MBBS in Georgia.
             </p>
           </div>
 
