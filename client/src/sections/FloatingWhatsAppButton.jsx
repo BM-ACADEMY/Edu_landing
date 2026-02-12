@@ -9,7 +9,8 @@ const Whatsapp = () => {
         accountName="Edu Consultants"
         avatar="/assets/edu.png"
         statusMessage="Online"
-        chatMessage="Welcome to Edu Consultants! How can we help you?"
+        // Updated to be a greeting from the Consultant
+        chatMessage="Hello 👋! Are you interested in Study Abroad in France or MBBS in Georgia? We're here to guide you."
         placeholder="Type a message..."
         darkMode={true}
         allowEsc
