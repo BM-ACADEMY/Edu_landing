@@ -6,19 +6,19 @@ export default function UpcomingWebinarsSection() {
   const webinars = [
     {
       topic: 'MBBS in Georgia: Eligibility, Fees & Admission Process',
-      date: 'Sunday | 4:00 PM IST',
+      date: 'Free Consultant',
       category: 'MBBS ABROAD',
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop',
     },
     {
       topic: 'Study in France: Universities, Costs & Admission Process',
-      date: 'Saturday | 6:00 PM IST',
+      date: 'Free Consultant',
       category: 'STUDY IN FRANCE',
       image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop',
     },
     {
       topic: 'Local College Admissions: Counselling, Cut-Offs & Seats',
-      date: 'Sunday | 11:00 AM IST',
+      date: 'Free Consultant',
       category: 'LOCAL ADMISSIONS',
       image: 'https://images.unsplash.com/photo-1667273704848-32df02bd29f3?q=80&w=1170&auto=format&fit=crop',
     },
