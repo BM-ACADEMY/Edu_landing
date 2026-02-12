@@ -28,12 +28,12 @@ export default function UpcomingWebinarsSection() {
     <section id="webinars" className='relative py-16 md:py-24 bg-white font-["Plus_Jakarta_Sans"] overflow-hidden'>
       
       {/* Background Decoration */}
-      <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#00E0FF]/5 rounded-full blur-3xl opacity-50 pointer-events-none" />
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#00E0FF]/5 rounded-full blur-3xl opacity-50 pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-16 lg:px-24">
         
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 md:mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
           <div className="max-w-2xl">
             <div className='flex items-center gap-3 mb-4'>
               <span className="h-[2px] md:h-[3px] w-8 md:w-12 bg-[#CE2029]"></span>
@@ -47,16 +47,15 @@ export default function UpcomingWebinarsSection() {
             </h2>
           </div>
           
-          {/* UPDATED: Removed 'uppercase', ensuring strict sentence case with Capital J */}
           <p className="max-w-xs text-sm font-bold text-slate-400 tracking-widest leading-relaxed">
             Join expert-led sessions on MBBS abroad, France education, and local admissions.
           </p>
         </div>
 
         {/* Cards Grid */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16'>
           {webinars.map((webinar, index) => (
-            <div key={index} className='group flex flex-col overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-white border border-slate-100 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_40px_80px_-15px_rgba(206,32,41,0.1)] hover:-translate-y-2 md:hover:-translate-y-3'>
+            <div key={index} className='group flex flex-col overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)]'>
 
               {/* Image Container */}
               <div className="relative h-48 md:h-56 w-full overflow-hidden">
@@ -77,28 +76,34 @@ export default function UpcomingWebinarsSection() {
                   <span>{webinar.date}</span>
                 </div>
 
-                <h3 className='text-xl md:text-2xl font-extrabold leading-[1.2] text-[#001F3F] transition-colors group-hover:text-[#CE2029]'>
+                <h3 className='text-xl md:text-2xl font-extrabold leading-[1.2] text-[#001F3F] mb-6'>
                   {webinar.topic}
                 </h3>
 
-                <div className="mt-auto flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-tight pt-4 md:pt-6">
-                  <VideoIcon className="size-4 text-slate-300" />
-                  <span>Live via Zoom/Meet</span>
+                <div className="mt-auto">
+                    <div className="flex items-center gap-2 text-[10px] font-bold text-slate-400 uppercase tracking-tight">
+                        <VideoIcon className="size-4 text-slate-300" />
+                        <span>Live via Zoom/Meet</span>
+                    </div>
                 </div>
-
-                <a
-                  href={GOOGLE_FORM_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className='mt-6 md:mt-8 flex items-center justify-center gap-3 rounded-2xl bg-[#001F3F] px-6 py-4 text-sm font-black text-white transition-all hover:bg-[#CE2029] hover:shadow-[0_15px_30px_-5px_rgba(206,32,41,0.3)] active:scale-95'
-                >
-                  REGISTER FOR FREE
-                  <ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-1" />
-                </a>
               </div>
             </div>
           ))}
         </div>
+
+        {/* BOTTOM CENTERED CTA */}
+        <div className="flex justify-center">
+            <a
+                href={GOOGLE_FORM_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='group flex items-center justify-center gap-4 rounded-full bg-[#001F3F] px-10 py-5 text-sm md:text-base font-black text-white transition-all hover:bg-[#CE2029] hover:shadow-[0_20px_40px_-10px_rgba(206,32,41,0.4)] active:scale-95'
+            >
+                REGISTER FOR FREE COUNSELLING
+                <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-2" />
+            </a>
+        </div>
+
       </div>
     </section>
   );

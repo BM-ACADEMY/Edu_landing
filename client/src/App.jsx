@@ -13,6 +13,7 @@ import TrendingContentSection from "./sections/TrendingContentSection";
 import ProcessSection from "./sections/ProcessSection";
 import PopularProgramsSection from "./sections/PopularProgramsSection";
 import AboutContactSection from "./sections/AboutContactSection";
+import FloatingWhatsAppButton from "./sections/FloatingWhatsAppButton";
 
 export default function App() {
     return (
@@ -30,6 +31,7 @@ export default function App() {
                 <PopularProgramsSection />
                 <FaqSection />
                 <AboutContactSection />
+                <FloatingWhatsAppButton />
                 {/* <CallToActionSection /> */}
             </main>
             <Footer />
