@@ -1,6 +1,8 @@
 import { GraduationCapIcon, MapPinIcon, BanknoteIcon, CalendarIcon, ArrowRightIcon } from 'lucide-react';
 
 export default function PopularProgramsSection() {
+    const BROCHURE_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfkglHXnqOnh4rqlrBwgBmWAe2wZy6nAiYhJ3x8rscI_XCfmw/viewform";
+
     const programs = [
         {
             category: 'MBBS Abroad',
@@ -38,7 +40,6 @@ export default function PopularProgramsSection() {
     ];
 
     return (
-        // Reduced vertical padding for mobile (py-16 vs py-32)
         <section id="programs" className='relative py-16 md:py-32 bg-white font-["Plus_Jakarta_Sans"] overflow-hidden'>
             
             {/* Background Accent */}
@@ -56,7 +57,6 @@ export default function PopularProgramsSection() {
                             </span>
                         </div>
                         
-                        {/* Scaled heading for mobile */}
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-[900] text-[#001F3F] tracking-tighter leading-none">
                             Popular <span className="text-slate-400">Programs</span>
                         </h2>
@@ -68,7 +68,7 @@ export default function PopularProgramsSection() {
                 </div>
 
                 {/* Programs Grid */}
-                <div className='grid grid-cols-1 gap-8 md:gap-10 lg:grid-cols-3'>
+                <div className='grid grid-cols-1 gap-8 md:gap-10 lg:grid-cols-3 mb-16 md:mb-20'>
                     {programs.map((program, index) => (
                         <div key={index} className='group flex flex-col overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-white border border-slate-100 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_40px_80px_-15px_rgba(0,31,63,0.1)] hover:-translate-y-2 md:hover:-translate-y-3'>
 
@@ -90,9 +90,7 @@ export default function PopularProgramsSection() {
                             </div>
 
                             {/* Content Body */}
-                            {/* Reduced padding for mobile (p-6 vs p-10) */}
                             <div className='p-6 md:p-10 flex flex-col flex-1'>
-                                {/* Scaled title for mobile */}
                                 <h3 className='text-xl md:text-2xl font-black text-[#001F3F] mb-6 md:mb-8 leading-[1.2] group-hover:text-[#CE2029] transition-colors'>
                                     {program.title}
                                 </h3>
@@ -114,20 +112,24 @@ export default function PopularProgramsSection() {
                                         </div>
                                     ))}
                                 </div>
-
-                                {/* Premium Action Button */}
-                                <a
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSfkglHXnqOnh4rqlrBwgBmWAe2wZy6nAiYhJ3x8rscI_XCfmw/viewform"
-                                    target="_blank"
-                                    className='mt-8 md:mt-10 flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-[#001F3F] text-white font-black text-xs tracking-widest transition-all hover:bg-[#CE2029] hover:shadow-[0_15px_30px_-5px_rgba(206,32,41,0.3)] active:scale-95'
-                                >
-                                    GET BROCHURE
-                                    <ArrowRightIcon className="size-4" />
-                                </a>
                             </div>
                         </div>
                     ))}
                 </div>
+
+                {/* CENTERED CTA BUTTON */}
+                <div className="flex justify-center">
+                    <a
+                        href={BROCHURE_LINK}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='group flex items-center justify-center gap-3 rounded-full bg-[#001F3F] px-10 py-5 text-sm font-black text-white tracking-widest transition-all hover:bg-[#CE2029] hover:shadow-[0_20px_40px_-10px_rgba(206,32,41,0.4)] active:scale-95'
+                    >
+                        GET PROGRAM DETAILS
+                        <ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-1" />
+                    </a>
+                </div>
+
             </div>
         </section>
     );

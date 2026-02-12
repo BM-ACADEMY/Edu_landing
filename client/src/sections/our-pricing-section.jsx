@@ -1,5 +1,4 @@
-import { ClockIcon, ArrowUpRightIcon, TagIcon } from 'lucide-react';
-
+import { ClockIcon, TagIcon, ArrowRightIcon } from 'lucide-react';
 export default function TrendingContentSection() {
   const APPLY_LINK =
     "https://docs.google.com/forms/d/e/1FAIpQLSfkglHXnqOnh4rqlrBwgBmWAe2wZy6nAiYhJ3x8rscI_XCfmw/viewform";
@@ -7,11 +6,10 @@ export default function TrendingContentSection() {
   const trendingPosts = [
     {
       title: 'Top MBBS Colleges in Georgia: 2025 Rankings',
-      excerpt: 'Top medical universities in Georgia offering English-taught MBBS programs with global reach',
+      excerpt: 'Top medical universities in Georgia offering English-taught MBBS programs with global reach.',
       category: 'MBBS Abroad',
       date: '2 Days Ago',
       image: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600',
-      link: '#'
     },
     {
       title: 'Scholarships for France: How to Apply',
@@ -19,7 +17,6 @@ export default function TrendingContentSection() {
       category: 'Scholarships',
       date: '5 Days Ago',
       image: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600',
-      link: '#'
     },
     {
       title: 'Medical Education: Local vs Abroad',
@@ -27,7 +24,6 @@ export default function TrendingContentSection() {
       category: 'Expert Guide',
       date: 'Trending',
       image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600',
-      link: '#'
     }
   ];
 
@@ -38,8 +34,10 @@ export default function TrendingContentSection() {
 
       <div className="container mx-auto px-6 md:px-16 lg:px-24">
 
-        {/* Header Section */}
+        {/* Header Section with Button on Right */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
+          
+          {/* Title Block */}
           <div className="max-w-2xl">
             <div className='flex items-center gap-3 mb-6'>
               <span className="h-[3px] w-12 bg-[#CE2029]"></span>
@@ -52,18 +50,20 @@ export default function TrendingContentSection() {
             </h2>
           </div>
 
-          {/* DESKTOP APPLY BUTTON */}
-          <a
-            href={APPLY_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className='hidden lg:flex items-center gap-3 text-sm font-black text-[#001F3F] hover:text-[#CE2029] transition-colors group'
-          >
-            GET BROCHURE / APPLY
-            <div className='p-2 rounded-full border border-slate-200 group-hover:border-[#CE2029]'>
-              <ArrowUpRightIcon className='size-4' />
-            </div>
-          </a>
+          {/* RIGHT SIDE TOP BUTTON */}
+<div className="flex-shrink-0">
+  <a
+    href={APPLY_LINK}
+    target="_blank"
+    rel="noopener noreferrer"
+    // Added 'tracking-widest' here 👇
+    className='group flex items-center justify-center gap-3 rounded-full bg-[#001F3F] px-8 py-4 text-sm font-black text-white tracking-widest transition-all hover:bg-[#CE2029] hover:shadow-[0_20px_40px_-10px_rgba(206,32,41,0.4)] active:scale-95'
+  >
+    ENROLL NOW
+    <ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-1" />
+  </a>
+</div>
+
         </div>
 
         {/* Editorial Grid */}
@@ -71,7 +71,7 @@ export default function TrendingContentSection() {
           {trendingPosts.map((post, index) => (
             <div
               key={index}
-              className='group flex flex-col overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 transition-all duration-500 hover:shadow-[0_40px_80px_-15px_rgba(0,31,63,0.15)]'
+              className='group flex flex-col overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 transition-all duration-500 hover:shadow-[0_40px_80px_-15px_rgba(0,31,63,0.15)] hover:-translate-y-2'
             >
               {/* Image Header */}
               <div className='relative h-64 w-full overflow-hidden'>
@@ -99,43 +99,18 @@ export default function TrendingContentSection() {
                   <span>{post.date}</span>
                 </div>
 
-                <h3 className='text-2xl font-bold text-[#001F3F] leading-snug group-hover:text-[#CE2029] transition-colors'>
+                <h3 className='text-2xl font-bold text-[#001F3F] leading-snug group-hover:text-[#CE2029] transition-colors mb-4'>
                   {post.title}
                 </h3>
 
-                {/* REMOVED line-clamp-2 so full text shows */}
-                <p className='mt-4 text-[15px] leading-relaxed text-slate-500 font-medium'>
+                <p className='text-[15px] leading-relaxed text-slate-500 font-medium'>
                   {post.excerpt}
                 </p>
-
-                <div className='mt-auto pt-8 border-t border-slate-50'>
-                  <a
-                    href={APPLY_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className='relative inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#001F3F] group/link'
-                  >
-                    Get Brochure / Apply
-                    <ArrowUpRightIcon className='size-4 text-[#00E0FF] transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1' />
-                    <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#00E0FF] transition-all group-hover/link:w-full" />
-                  </a>
-                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* MOBILE APPLY BUTTON */}
-        <div className='mt-16 flex justify-center lg:hidden'>
-          <a
-            href={APPLY_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className='w-full rounded-2xl bg-[#001F3F] py-5 text-sm font-black text-white shadow-xl shadow-[#001F3F]/20 text-center'
-          >
-            GET BROCHURE / APPLY
-          </a>
-        </div>
       </div>
     </section>
   );

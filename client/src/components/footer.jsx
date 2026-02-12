@@ -3,7 +3,9 @@ import {
   YoutubeIcon,
   MapPinIcon,
   PhoneIcon,
-  MailIcon
+  MailIcon,
+  FacebookIcon,
+  LinkedinIcon
 } from "lucide-react";
 
 export default function Footer() {
@@ -46,6 +48,22 @@ export default function Footer() {
                   className="p-2 bg-slate-50 rounded-full text-slate-600 hover:bg-[#CE2029] hover:text-white transition-all"
                 >
                   <InstagramIcon size={20} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/edu-consultants/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-slate-50 rounded-full text-slate-600 hover:bg-[#CE2029] hover:text-white transition-all"
+                >
+                  <LinkedinIcon size={20} />
+                </a>
+                <a
+                  href="https://www.facebook.com/share/19Lzkx7dNq/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-slate-50 rounded-full text-slate-600 hover:bg-[#CE2029] hover:text-white transition-all"
+                >
+                  <FacebookIcon size={20} />
                 </a>
                 <a
                   href="https://www.youtube.com/@educonsultants6746"

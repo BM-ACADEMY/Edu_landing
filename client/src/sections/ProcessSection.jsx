@@ -23,10 +23,20 @@ export default function ProcessSection() {
         // Reduced padding for mobile (py-16 vs py-32)
         <section className='relative py-16 md:py-32 bg-[#FDFDFD] font-["Plus_Jakarta_Sans"] overflow-hidden'>
             
-            {/* Background Accent */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-[#00E0FF]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+            {/* Decorative Image Top Right - FIXED ALIGNMENT */}
+            <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full pointer-events-none overflow-hidden z-0">
+                {/* Mask/Fade Effect - Colors updated to #FDFDFD to match section bg */}
+                <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#FDFDFD]/20 to-[#FDFDFD] z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#FDFDFD] via-transparent to-[#FDFDFD] z-10" />
+                <img 
+                    src="/assets/edudoc.jpeg" 
+                    alt="Education Consultant" 
+                    // Added object-top to ensure the head isn't cut off
+                    className="w-full h-full object-cover object-top opacity-60 mix-blend-multiply"
+                />
+            </div>
 
-            <div className="container mx-auto px-6 md:px-16 lg:px-24">
+            <div className="container mx-auto px-6 md:px-16 lg:px-24 relative z-20">
                 
                 {/* Header Section */}
                 {/* Reduced bottom margin (mb-12 vs mb-16) */}
@@ -52,9 +62,6 @@ export default function ProcessSection() {
                 </div>
 
                 <div className='relative mt-12 md:mt-16 w-full max-w-6xl mx-auto'>
-                    {/* Connecting Line (Hidden on Mobile) */}
-                    <div className='absolute top-[40px] left-[10%] hidden h-[2px] w-[80%] bg-gradient-to-r from-[#00E0FF]/20 via-[#CE2029]/20 to-[#00E0FF]/20 md:block'></div>
-
                     {/* Grid: Reduced gap for mobile (gap-10 vs gap-16) */}
                     <div className='grid grid-cols-1 gap-10 md:gap-16 md:grid-cols-3'>
                         {steps.map((step, index) => (
@@ -93,7 +100,7 @@ export default function ProcessSection() {
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfkglHXnqOnh4rqlrBwgBmWAe2wZy6nAiYhJ3x8rscI_XCfmw/viewform"
                         target="_blank"
-                        rel="noreferrer" // Added noreferrer for security
+                        rel="noreferrer"
                         className='group relative flex items-center gap-4 overflow-hidden rounded-2xl bg-[#001F3F] px-8 py-4 md:px-12 md:py-5 text-sm font-black text-white transition-all hover:bg-[#CE2029] hover:shadow-[0_20px_40px_rgba(206,32,41,0.3)] active:scale-95'
                     >
                         <span className="tracking-widest italic">START STEP 1 NOW</span>
